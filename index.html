@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  
+
+<div class="container">
+  <h1>Generate a <br><span>Random Password</span></h1>
+  <div class="display">
+  <input type="text" id="password" placeholder="Password">
+  <img src="https://cdn.iconscout.com/icon/free/png-256/free-copy-79-267441.png" onclick="copyPassword()">
+  </div>
+  <button onclick="createPassword()"><img src="data:image/png;base64,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" > Generate Password</button>
+</div>
+
+
+<script>
+
+const passwordBox = document.getElementById("password");
+const lenght = 12;
+
+
+const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+const lowerCase = "abcdefghijklmnopqrstuvwxyz";
+const number = "0123456789"
+const symbol = "&*%#^!?}{|}+_$@<>";
+
+const allChars = upperCase + lowerCase + number + symbol;
+
+function createPassword(){
+  let password = "";
+  password += upperCase[Math.floor(Math.random() * upperCase.length)];
+  password += lowerCase[Math.floor(Math.random() * lowerCase.length)];
+  password += number[Math.floor(Math.random() * number.length)];
+  password += symbol[Math.floor(Math.random() * symbol.length)];
+
+
+  while(lenght > password.length){
+    password += allChars[Math.floor(Math.random() * allChars.length)];
+
+  }
+  passwordBox.value = password;
+}
+
+function copyPassword(){
+  passwordBox.select();
+  document.execCommand("copy");
+}
+
+</script>
+
+
+</body>
+</html>
